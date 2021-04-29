@@ -16,6 +16,8 @@ Hello World
 
 
 <script src="audiosynth.js"></script>
+
+<script src="playsong.js"></script>
 <script type="text/javascript">
 	Synth instanceof AudioSynth; // true
 
@@ -32,7 +34,7 @@ document.getElementById("Song1").addEventListener("click", playSong);
 
 
 document.getElementById("Song1").addEventListener("click", playSong);
-function playSong(){
+function playSong1(){
 
 	var piano = Synth.createInstrument('piano');
 	setTimeout(function() {piano.play('E', 3, 1)},0);
@@ -107,6 +109,8 @@ piano.play('C', 1, 2); // plays C4 for 2s using the 'piano' sound profile
 
 }
 </script>
+
+
 </body>
 
 </html>
